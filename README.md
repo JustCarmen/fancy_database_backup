@@ -7,6 +7,6 @@ This is a very small module with a very powerful purpose. It provides the abilit
 
 This module requires webtrees version 1.5.0 or later.
 
-You also need a working installation of <a href="www.mysqldumper.net">MySQLDumper</a>. This is NOT provided as part of this module.
+You also need a working installation of <a href="http://www.mysqldumper.net">MySQLDumper</a>. This is NOT provided as part of this module.
 
 You will find further instructions in the readme.html file.
