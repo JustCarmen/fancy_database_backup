@@ -55,7 +55,7 @@ class fancy_database_backup_WT_Module extends WT_Module implements WT_Module_Con
 	
 	// Extend class WT_Module
 	public function getTitle() {
-		return /* Name of a module (not translatable) */ 'Fancy Database Backup';
+		return /* I18N: Name of a module/sidebar */ WT_I18N::translate('Fancy Database Backup');
 	}
 
 	// Extend class WT_Module
@@ -87,5 +87,4 @@ class fancy_database_backup_WT_Module extends WT_Module implements WT_Module_Con
 	public function getConfigLink() {
 		return 'module.php?mod='.$this->getName().'&amp;mod_action=admin';
 	}
-
 }
