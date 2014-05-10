@@ -27,7 +27,7 @@ if (!defined('WT_WEBTREES')) {
 }
 
 class fancy_database_backup_WT_Module extends WT_Module implements WT_Module_Config {
-	
+
 	public function __construct() {
 		parent::__construct();
 		// Load any local user translations
@@ -49,7 +49,7 @@ class fancy_database_backup_WT_Module extends WT_Module implements WT_Module_Con
 			}
 		}
 	}
-	
+
 	// Extend class WT_Module
 	public function getTitle() {
 		return /* I18N: Name of a module/sidebar */ WT_I18N::translate('Fancy Database Backup');
@@ -68,7 +68,7 @@ class fancy_database_backup_WT_Module extends WT_Module implements WT_Module_Con
 			$controller
 				->requireAdminLogin()
 				->pageHeader();
-				
+
 			echo '<div id="fancy_db">';
 			echo '<iframe src="mysqldumper/index.php" width="100%" height="580">'; // Change this src link if you have not installed MySQLDumper in the webtrees root.
 			echo '<p>'.WT_I18N::translate('Sorry, your browser does not support iframes.').'</p>';
