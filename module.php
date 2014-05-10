@@ -66,7 +66,7 @@ class fancy_database_backup_WT_Module extends WT_Module implements WT_Module_Con
 		case 'admin':
 			$controller=new WT_Controller_Page();
 			$controller
-				->requireAdminLogin()
+				->restrictAccess(\WT\Auth::isAdmin())
 				->pageHeader();
 
 			echo '<div id="fancy_db">';
