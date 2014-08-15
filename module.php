@@ -21,6 +21,8 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
+use WT\Auth;
+
 if (!defined('WT_WEBTREES')) {
 	header('HTTP/1.0 403 Forbidden');
 	exit;
@@ -66,7 +68,7 @@ class fancy_database_backup_WT_Module extends WT_Module implements WT_Module_Con
 		case 'admin':
 			$controller=new WT_Controller_Page();
 			$controller
-				->restrictAccess(\WT\Auth::isAdmin())
+				->restrictAccess(Auth::isAdmin())
 				->pageHeader();
 
 			echo '<div id="fancy_db">';
