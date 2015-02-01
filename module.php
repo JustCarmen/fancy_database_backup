@@ -72,7 +72,7 @@ class fancy_database_backup_WT_Module extends WT_Module implements WT_Module_Con
 					<li class="active"><?php echo $this->getTitle(); ?></li>
 				</ol>
 				<h2><?php echo $this->getTitle(); ?></h2>
-				<iframe src="mysqldumper/index.php" width="100%" height="580" style="border: 1px solid #ddd">
+				<iframe src="mysqldumper/index.php" width="100%" height="580" style="border: 1px solid #ddd; margin-bottom: 20px">
 				<p class="alert alert-danger"><?php echo WT_I18N::translate('Sorry, your browser does not support iframes.') ?></p>
 				</iframe>
 				<?php
