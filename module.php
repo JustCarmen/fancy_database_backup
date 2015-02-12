@@ -74,7 +74,8 @@ class fancy_database_backup_WT_Module extends Module implements ModuleConfigInte
 				<?php
 				break;
 			default:
-				header('HTTP/1.0 404 Not Found');
+				http_response_code(404);
+				break;
 		}
 	}
 
