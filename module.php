@@ -19,10 +19,10 @@ namespace Fisharebest\Webtrees;
 
 use Zend_Translate;
 
-class fancy_database_backup_WT_Module extends Module implements ModuleConfigInterface {
+class FancyDatabaseBackupModule extends Module implements ModuleConfigInterface {
 
 	public function __construct() {
-		parent::__construct();
+		parent::__construct('fancy_database_backup');
 		// Load any local user translations
 		if (is_dir(WT_MODULES_DIR . $this->getName() . '/language')) {
 			if (file_exists(WT_MODULES_DIR . $this->getName() . '/language/' . WT_LOCALE . '.mo')) {
@@ -85,3 +85,5 @@ class fancy_database_backup_WT_Module extends Module implements ModuleConfigInte
 	}
 
 }
+
+return new FancyDatabaseBackupModule;
