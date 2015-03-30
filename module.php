@@ -19,7 +19,7 @@ namespace Fisharebest\Webtrees;
 
 use Zend_Translate;
 
-class FancyDatabaseBackupModule extends Module implements ModuleConfigInterface {
+class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigInterface {
 
 	public function __construct() {
 		parent::__construct('fancy_database_backup');
