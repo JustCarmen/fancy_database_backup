@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Database Backup\n"
+"POT-Creation-Date: 2015-07-04 11:45+0200\n"
+"PO-Revision-Date: 2015-07-04 11:45+0200\n"
+"PO-Revision-Date: Carmen Pijpers <carmen@justcarmen.nl>\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
+"Language-Team: \n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. I18N: Name of a module/sidebar
+#: module.php:33
+msgid "Fancy Database Backup"
+msgstr ""
+
+#: module.php:38
+msgid "Provides access to MySQLDumper. A database backup tool."
+msgstr ""
+
+#: module.php:57
+msgid "Sorry, your browser does not support iframes."
+msgstr ""
