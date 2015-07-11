@@ -16,16 +16,21 @@
  */
 namespace JustCarmen\WebtreesAddOns\FancyDatabaseBackup;
 
-use Fisharebest\Webtrees\Auth;
-use Fisharebest\Webtrees\Controller\PageController;
+use Composer\Autoload\ClassLoader;
 use Fisharebest\Webtrees\I18N;
 use Fisharebest\Webtrees\Module\AbstractModule;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
+use JustCarmen\WebtreesAddOns\FancyDatabaseBackup\Template\AdminTemplate;
 
 class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigInterface {
-
+	
 	public function __construct() {
 		parent::__construct('fancy_database_backup');
+
+		// register the namespaces
+		$loader = new ClassLoader();
+		$loader->addPsr4('JustCarmen\\WebtreesAddOns\\FancyDatabaseBackup\\', WT_MODULES_DIR . $this->getName() . '/src');
+		$loader->register();
 	}
 
 	// Extend class Module
@@ -42,22 +47,8 @@ class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigIn
 	public function modAction($mod_action) {
 		switch ($mod_action) {
 			case 'admin':
-				$controller = new PageController();
-				$controller
-					->restrictAccess(Auth::isAdmin())
-					->pageHeader();
-				?>
-				<ol class="breadcrumb small">
-					<li><a href="admin.php"><?php echo I18N::translate('Control panel'); ?></a></li>
-					<li><a href="admin_modules.php"><?php echo I18N::translate('Module administration'); ?></a></li>
-					<li class="active"><?php echo $this->getTitle(); ?></li>
-				</ol>
-				<h2><?php echo $this->getTitle(); ?></h2>
-				<iframe src="mysqldumper/index.php" width="100%" height="580" style="border: 1px solid #ddd; margin-bottom: 20px">
-				<p class="alert alert-danger"><?php echo I18N::translate('Sorry, your browser does not support iframes.') ?></p>
-				</iframe>
-				<?php
-				break;
+				$template = new AdminTemplate;
+				return $template->pageContent();
 			default:
 				http_response_code(404);
 				break;
