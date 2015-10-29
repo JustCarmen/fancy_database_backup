@@ -23,7 +23,7 @@ Additional setup
 ----------------
 if you have installed the mySQLDumper folder and files in a different location of your webtrees installation, you have to point the module to this other location.
 
-Open the file modules_v3/fancy_database_backup/module.php. At line 54 replace the entry "mysqldumper/index.php" with the correct path to the index.php file of your own MySQLDumper installation. Then save the revised file back to your web server. 
+Open the file modules_v3/fancy_database_backup/src/Template/AdminTemplate.php. At line 49 replace the entry "mysqldumper/index.php" with the correct path to the index.php file of your own MySQLDumper installation. Then save the revised file back to your web server. 
 
 Do not make any changes to your separate MySqlDumper folder or files when you update the module. Just take care if you modified line 54 as described in ADDITIONAL SETUP above. It will need the same change in the new file. 
 
