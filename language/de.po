@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Database Backup\n"
-"POT-Creation-Date: 2015-07-04 11:45+0200\n"
+"POT-Creation-Date: 2016-03-20 22:23+0100\n"
 "PO-Revision-Date: 2015-07-04 11:48+0200\n"
 "Last-Translator: Hermann Hartenthaler <hermann@hartenthaler,de>\n"
 "Language-Team: \n"
@@ -15,14 +15,14 @@ msgstr ""
 "X-Poedit-KeywordsList: translate;noop;plural:1,2\n"
 
 #. I18N: Name of a module/sidebar
-#: module.php:33
+#: module.php:40
 msgid "Fancy Database Backup"
 msgstr ""
 
-#: module.php:38
+#: module.php:45
 msgid "Provides access to MySQLDumper. A database backup tool."
 msgstr "Ermöglicht die integrierte Nutzung des Datenbank-BackUp-Programms MySQLDumper."
 
-#: module.php:57
+#: src/Template/AdminTemplate.php:48
 msgid "Sorry, your browser does not support iframes."
 msgstr "Browser unterstützt leider keine iframes."
