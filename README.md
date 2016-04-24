@@ -27,8 +27,12 @@ Open the file modules_v3/fancy_database_backup/src/Template/AdminTemplate.php. A
 
 Do not make any changes to your separate MySqlDumper folder or files when you update the module. Just take care if you modified line 54 as described in ADDITIONAL SETUP above. It will need the same change in the new file. 
 
-Installation, updating and translations
----------------------------------------
+Translations
+------------
+You can help to translate this module. Updates to translations should be made at https://translate.webtrees.net/projects/justcarmen/. Changes made there will be pushed to the git repository periodically and will be available on the development version of the module. They will be included in the next release of this module.
+
+Installation & upgrading
+------------------------
 For more information about these subjects go to the JustCarmen help pages: http://www.justcarmen.nl/help
 
 Bugs and feature requests
