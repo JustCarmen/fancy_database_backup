@@ -22,7 +22,7 @@ use Fisharebest\Webtrees\Module\AbstractModule;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use JustCarmen\WebtreesAddOns\FancyDatabaseBackup\Template\AdminTemplate;
 
-define('FDB_VERSION', '1.7.4');
+define('FDB_VERSION', '1.7.5-dev');
 
 class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigInterface {
 
@@ -31,7 +31,7 @@ class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigIn
 
 		// register the namespaces
 		$loader = new ClassLoader();
-		$loader->addPsr4('JustCarmen\\WebtreesAddOns\\FancyDatabaseBackup\\', WT_MODULES_DIR . $this->getName() . '/src');
+		$loader->addPsr4('JustCarmen\\WebtreesAddOns\\FancyDatabaseBackup\\', WT_MODULES_DIR . $this->getName() . '/app');
 		$loader->register();
 	}
 
