@@ -22,9 +22,10 @@ use Fisharebest\Webtrees\Module\AbstractModule;
 use Fisharebest\Webtrees\Module\ModuleConfigInterface;
 use JustCarmen\WebtreesAddOns\FancyDatabaseBackup\Template\AdminTemplate;
 
-define('FDB_VERSION', '1.7.5-dev');
-
 class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigInterface {
+	
+	const CUSTOM_VERSION = '1.7.5-dev';
+	const CUSTOM_WEBSITE = 'http://www.justcarmen.nl/fancy-modules/fancy-database-backup/';
 
 	public function __construct() {
 		parent::__construct('fancy_database_backup');
@@ -42,7 +43,7 @@ class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigIn
 
 	// Extend class Module
 	public function getDescription() {
-		return I18N::translate('Provides access to MySQLDumper. A database backup tool.') . '<br><span class="small text-muted">' . I18N::translate('Version') . ' ' . FDB_VERSION . ' | by JustCarmen | <a href="http://www.justcarmen.nl/fancy-modules/fancy-database-backup/">' . I18N::translate('Show details') . '</a></span>';
+		return I18N::translate('Provides access to MySQLDumper. A database backup tool.');
 	}
 
 	// Extend Module
