@@ -11,7 +11,7 @@ This is a very small module with a very powerful purpose. It provides the abilit
 
 You need a working installation of <a href="http://www.mysqldumper.net">MySQLDumper</a>. This is NOT provided as part of this module.
 
-*Note: MySQLDumper is incompatiable with PHP7. [Read this issue for more information](https://github.com/JustCarmen/fancy_database_backup/issues/1).*
+*Note: MySQLDumper is incompatible with PHP7. [Read this issue for more information](https://github.com/JustCarmen/fancy_database_backup/issues/1).*
 
 Installation of MySQLDumper
 ---------------------------
