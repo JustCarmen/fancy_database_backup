@@ -11,6 +11,8 @@ This is a very small module with a very powerful purpose. It provides the abilit
 
 You need a working installation of <a href="http://www.mysqldumper.net">MySQLDumper</a>. This is NOT provided as part of this module.
 
+*Note: MySQLDumper is incompatiable with PHP7. [Read this issue for more information](https://github.com/JustCarmen/fancy_database_backup/issues/1).*
+
 Installation of MySQLDumper
 ---------------------------
 Before doing anything with this module, download and install the latest version of MySQLDumper from www.mysqldumper.net. To use it in conjunction with this module directly, place the folder from the downloaded zip in the root of your webtrees installation. Rename the folder to mysqldumper. If you prefer another location and/or name for this tool please read the additional instructions below.
