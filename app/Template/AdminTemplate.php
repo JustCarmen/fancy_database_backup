@@ -44,7 +44,7 @@ class AdminTemplate extends FancyDatabaseBackupModule {
 			<li class="active"><?php echo $this->getTitle() ?></li>
 		</ol>
 		<h2><?php echo $this->getTitle() ?></h2>
-		<iframe src="mysqldumper/index.php" height="580" style="border: 1px solid #ddd; margin-bottom: 20px; width: 100%">
+		<iframe src="<?= WT_MODULES_DIR . $this->getName() . '/vendor/r23/MyOOS[Dumper]' ?>" height="580" style="border: 1px solid #ddd; margin-bottom: 20px; width: 100%">
 			<p class="alert alert-danger"><?php echo I18N::translate('Sorry, your browser does not support iframes.') ?></p>
 		</iframe>
 		<?php
