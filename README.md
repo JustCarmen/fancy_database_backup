@@ -3,31 +3,13 @@ Fancy Database Backup
 
 A database backup module for webtrees.
 
-This module requires [webtrees 1.7.0](https://github.com/fisharebest/webtrees) or later. Download the latest stable release [here](https://github.com/JustCarmen/fancy_database_backup/releases/latest).
+The latest release of this module requires [webtrees 1.7.0](https://github.com/fisharebest/webtrees) or later. Download the latest stable release [here](https://github.com/JustCarmen/fancy_database_backup/releases/latest).
 
 Description
 -----------
 This is a very small module with a very powerful purpose. It provides the ability to include the excellent "MySQLDumper" backup software into your webtrees administration panel options. Throughout webtrees documentation you are very sensibly advised to back up your database at frequent intervals, and especially before any upgrade. If your webhost provides a tool like PhpMyAdmin or cPanel you should, if you know how, be able to use that. But for greater flexibility, simplicty and convenience MySQLDumper is hard to beat.
 
-You need a working installation of <a href="http://www.mysqldumper.net">MySQLDumper</a>. This is NOT provided as part of this module.
-
-*Note: MySQLDumper is incompatible with PHP7. [Read this issue for more information](https://github.com/JustCarmen/fancy_database_backup/issues/1).*
-
-Installation of MySQLDumper
----------------------------
-Before doing anything with this module, download and install the latest version of MySQLDumper from www.mysqldumper.net. To use it in conjunction with this module directly, place the folder from the downloaded zip in the root of your webtrees installation. Rename the folder to mysqldumper. If you prefer another location and/or name for this tool please read the additional instructions below.
-
-After installation, access MySQLDumper directly by going to your_webtrees_installation/mysqldumper to set it up and to check it is fully functional. There is no point wasting time with this module until you have a working installation of MySQLDumper. NOTE: If you have any problems installing or using MySQLDumper please contact them at their website for support.
-
-After you setup MySQLDumper, upload the folder 'fancy_database_backup' to your server's webtrees/modules_v3 folder and install the module as any other module (see the [JustCarmen Help Pages](http://www.justcarmen.nl/help) for instructions about installing a module).
-
-Additional setup
-----------------
-if you have installed the mySQLDumper folder and files in a different location of your webtrees installation, you have to point the module to this other location.
-
-Open the file modules_v3/fancy_database_backup/src/Template/AdminTemplate.php. At line 49 replace the entry "mysqldumper/index.php" with the correct path to the index.php file of your own MySQLDumper installation. Then save the revised file back to your web server. 
-
-Do not make any changes to your separate MySqlDumper folder or files when you update the module. Just take care if you modified line 54 as described in ADDITIONAL SETUP above. It will need the same change in the new file. 
+*Note: Since MySQLDumper is no longer maintained and incompatible with PHP7, MySQLDumper is replaced with MyOOSDumper which is a part of [MyOOS](https://github.com/r23/MyOOS/tree/master/msd).*
 
 Translations
 ------------
@@ -36,6 +18,8 @@ You can help to translate this module. Updates to translations should be made at
 Installation & upgrading
 ------------------------
 For more information about these subjects go to the JustCarmen help pages: http://www.justcarmen.nl/help
+
+The first time you start the configuration page of this module you will be lead through the installation process of MyOOSDumper. Just follow the instructions to complete the installation.
 
 Bugs and feature requests
 -------------------------

@@ -24,7 +24,7 @@ use JustCarmen\WebtreesAddOns\FancyDatabaseBackup\Template\AdminTemplate;
 
 class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigInterface {
 
-	const CUSTOM_VERSION	 = '1.8.0-dev';
+	const CUSTOM_VERSION	 = '1.7.9.1';
 	const CUSTOM_WEBSITE	 = 'http://www.justcarmen.nl/fancy-modules/fancy-database-backup/';
 
 	public function __construct() {
