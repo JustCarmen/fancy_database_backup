@@ -4,7 +4,7 @@
    MyOOS [Dumper]
    http://www.oos-shop.de/
 
-   Copyright (c) 2016 by the MyOOS Development Team.
+   Copyright (c) 2017 by the MyOOS Development Team.
    ----------------------------------------------------------------------
    Based on:
 
@@ -233,7 +233,6 @@ function DB_Copy($source, $destination, $drop_source=0, $insert_data=1)
 	{
 
 		$table=strtolower($row[0]);
-		$table.='xxxxxxxxxxxxxxxxralf';
 		$sqlt="SHOW CREATE TABLE `$source`.`$table`";
 		$res=MSD_query($sqlt);
 		if ($res)
@@ -1077,16 +1076,18 @@ function ChangeKeys($ok, $nk, $fld, $size, $restriction='')
 function build_where_from_record($data)
 {
 	if (!is_array($data)) return false;
-	$ret='';
+	$ret = '';
 	foreach ($data as $key=>$val)
 	{
-		$val=str_replace('<span class="treffer">','',$val);
-		$val=str_replace('</span>','',$val);
-		if (!empty($val)){
-			$ret.='`' . $key . '`="' . addslashes($val) . '" AND ';
+		$val = str_replace('<span class="treffer">','',$val);
+		$val = str_replace('</span>','',$val);
+		$nLen = strlen($val);
+		if (!empty($val) && ($nLen < 200)){		
+			$ret .='`' . $key . '`="' . addslashes($val) . '" AND ';
 		}
 	}
-	$ret=substr($ret,0,-5);
+	$ret = substr($ret,0,-5);
+
 	return $ret;
 }
 
