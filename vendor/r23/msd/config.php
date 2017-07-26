@@ -1,12 +1,5 @@
 <?php
 /* ----------------------------------------------------------------------
- * MyOOS Dumper will create this file automatically in the folder
- * vendor/r23/msd/. If creation of this file fails on your server
- * then please use your FTP program to upload this file into the
- * directory vendor/r23/msd/.
- * Rename the file to config.php and then chmod the file to 0777
- */
-/* ----------------------------------------------------------------------
   MyOOS [Dumper]
   http://www.oos-shop.de/
 
