@@ -1,8 +1,7 @@
 <?php
 /**
  * webtrees: online genealogy
- * Copyright (C) 2017 webtrees development team
- * Copyright (C) 2017 JustCarmen
+ * Copyright (C) 2018 JustCarmen (http://www.justcarmen.nl)
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -24,7 +23,7 @@ use JustCarmen\WebtreesAddOns\FancyDatabaseBackup\Template\AdminTemplate;
 
 class FancyDatabaseBackupModule extends AbstractModule implements ModuleConfigInterface {
 
-	const CUSTOM_VERSION	 = '1.7.9.2';
+	const CUSTOM_VERSION	 = '1.7.11';
 	const CUSTOM_WEBSITE	 = 'http://www.justcarmen.nl/fancy-modules/fancy-database-backup/';
 
 	public function __construct() {
